@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+h1 {
+  color: #333;
+}
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.task-input button {
+  background: #5c67f2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.task-input button:hover {
+  background: #4a54e1;
+}
+.filters button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #5c67f2;
+}
+.filters .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+li.completed {
+  background: lightgreen;
+}
+li .actions {
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+.actions button:hover {
+  color: #333;
+}
+#task-count {
+  font-weight: bold;
+}
